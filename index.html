@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>No Secrets Allowed</title>
+
+		<meta name="description" content="A talk about the NSA and cryptography.">
+		<meta name="author" content="Steve Klabnik">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>
+            No Secrets<br />
+            Allowed
+          </h1>
+					<h3>You, me, and the NSA makes three.</h3>
+					<p>
+            By @steveklabnik
+					</p>
+				</section>
+
+        <!-- the reality we face -->
+				<section>
+          <section>
+            <h2>Reality check</h2>
+          </section>
+          <section>
+            <h3>"This isn't new."</h3>
+          </section>
+          <section data-background="611folsom.png" data-background-size="800px">
+          </section>
+          <section data-background="http://www.mccullagh.org/db9/1ds-8/611-folsom-street-nsa.jpg" data-background-size="800px">
+          </section>
+          <section data-background="splitter.png" data-background-size="800px">
+          </section>
+          <section>
+            <h3>COINTELPRO</h3>
+          </section>
+
+          <section>
+          <p>FBI records show that 85% of COINTELPRO resources targeted groups and individuals that the FBI deemed "subversive", including communist and socialist organizations; organizations and individuals associated with the Civil Rights Movement, including Martin Luther King, Jr. and others associated with the Southern Christian Leadership Conference, the National Association for the Advancement of Colored People, and the Congress of Racial Equality and other civil rights organizations; black nationalist groups; the American Indian Movement; a broad range of organizations labeled "New Left", including Students for a Democratic Society and the Weathermen; almost all groups protesting the Vietnam War, as well as individual student demonstrators with no group affiliation; the National Lawyers Guild; organizations and individuals associated with the women's rights movement; nationalist groups such as those seeking independence for Puerto Rico, United Ireland, and Cuban exile movements including Orlando Bosch's Cuban Power and the Cuban Nationalist Movement; and additional notable Americans —even Albert Einstein, who was a socialist and a member of several civil rights groups, came under FBI surveillance during the years just before COINTELPRO's official inauguration.
+          </p>
+</section>
+<section>
+<p>
+The remaining 15% of COINTELPRO resources were expended to marginalize and subvert white hate groups, including the Ku Klux Klan and the National States' Rights Party.</p>
+          </section>
+          <section>
+            <h3>Historical figures investigated by the US government:</h3>
+            <ul>
+              <li>First Lady Eleanor Roosevelt (3,000 pages)</li>
+              <li>Frank Sinatra (1,300 pages)</li>
+              <li>Marilyn Monroe</li>
+              <li>John Lennon (300 pages, deportation attempt)</li>
+              <li>The Beatles</li>
+              <li>Martin Luther King, Jr.</li>
+              <li>Senator Barry Goldwater.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Church Committee</h3>
+
+<li>Over 26,000 individuals were at one point catalogued on an FBI list of persons to be rounded up in the event of a "national emergency".</li>
+
+<li>Over 500,000 domestic intelligence files were kept at the FBI headquarters, of which 65,000 of were opened in 1972 alone.</li>
+
+<li>At least 130,000 first class letters were opened and photographed by the FBI from 1940 to 1966</li>
+
+<li>A quarter of a million first class letters were opened and photographed by the CIA from 1953 to 1973.</li>
+
+<li>Millions of private telegrams sent from, to, or through the United States were obtained by the National Security Agency (NSA), under a secret arrangement with U.S. telegraph companies, from 1947 to 1975.</li>
+
+<li>Over 100,000 Americans have been indexed in U.S. Army intelligence files.</li>
+
+<li>About 300,000 individuals were indexed in a CIA computer system during the course of Operation CHAOS.</li>
+
+<li>Intelligence files on more than 11,000 individuals and groups were created by the Internal Revenue Service (IRS), with tax investigations "done on the basis of political rather than tax criteria".</li>
+
+          </section>
+          <section>
+            <h3>"2013 mass surveillance disclosures"</h3>
+          </section>
+          <section>
+            <h1>Any byte that leaves your <br />computer <br />unencrypted is essentially <br />public.</h1>
+          </section>
+          <section>
+            <h1>"I have nothing <br />to hide" <br /> means "I am <br />under-informed."</h1>
+          </section>
+          <section>
+            <h1>Cell phones are <i>inherently</i> spy devices.</h1>
+          </section>
+          <section>
+            <h2>Metadata</h2>
+          </section>
+          <section>
+            <h2>Both innocent <i>and</i> vitally important counter-terrorism?</h2>
+          </section>
+          <section data-background="http://rt.com/files/usa/news/trapwire-abraxas-cubic-surveillance-251/ifdc296889b6e9edbb2b475341f6b91be_government-spied-anarchist-groups.si.jpg" data-background-size="800px">
+
+          </section>
+          <section>
+            <p>“A young woman calls her gynecologist; then immediately calls her mother; then a man who, during the past few months, she had repeatedly spoken to on the telephone after 11pm; followed by a call to a family planning center that also offers abortions. A likely storyline emerges that would not be as evident by examining the record of a single telephone call.”</p>
+          </section>
+				</section>
+
+        <!-- what tools do we have? -->
+				<section>
+          <section>
+            <h2>A few trusty, well-worn tools</h2>
+          </section>
+          <section>
+            <h2>Tor</h2>
+          </section>
+          <section data-background="http://www.garethjmsaunders.co.uk/pc/images/network/network_proxy_visio.gif" data-background-size="800px">
+
+          </section>
+          <section data-background="https://www.torproject.org/images/htw1.png" data-background-size="800px">
+
+          </section>
+          <section data-background="https://www.torproject.org/images/htw2.png" data-background-size="800px">
+
+          </section>
+          <section data-background="https://www.torproject.org/images/htw3.png" data-background-size="800px">
+
+          </section>
+          <section>
+            <p>Example: end-to-end timing attack</p>
+          </section>
+          <section>
+            <h2>GPG</h2>
+          </section>
+          <section>
+            <h3>Public vs. Symmetric Key Encryption</h3>
+          </section>
+          <section data-background="http://library.thinkquest.org/C0126342/pic/fig1-2.gif" data-background-size="800px">
+          </section>
+          <section data-background="http://i.msdn.microsoft.com/dynimg/IC155063.gif" data-background-size="800px">
+          </section>
+          <section>
+            <h3>Web of Trust</h3>
+          </section>
+          <section data-background="http://1.bp.blogspot.com/-P6JrVUbFSBQ/UAUNDOk3o9I/AAAAAAAAAMo/RqQrB8av44M/s400/infiltratesocialnetwork.png" data-background-size="800px">
+          </section>
+          <section>
+            <h3>Key-signing parties</h3>
+          </section>
+          <section>
+            <h3>Security Culture</h3>
+          </section>
+				</section>
+
+        <!-- what should we do? -->
+				<section>
+          <section>
+            <h2>What do?</h2>
+          </section>
+          <section>
+            <h3>Take some time to learn some basic concepts.</h3>
+          </section>
+          <section>
+            <h3>Start using tools, even if you don't know what you're doing.</h3>
+          </section>
+          <section>
+            <h3>Help out, <i>especially</i> with UI/UX.</h3>
+          </section>
+          <section>
+            <h3>Consider the security & privacy implications of products you build.</h3>
+          </section>
+				</section>
+
+				<section>
+          <h1>Fin.</h1>
+          <p>@steveklabnik</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
